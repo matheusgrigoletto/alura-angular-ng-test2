@@ -8,7 +8,7 @@ import {
 import { PhotoFrameModule } from './photo-frame.module';
 import { PhotoFrameComponent } from './photo-frame.component';
 
-describe('PhotoFrameComponent', () => {
+describe(PhotoFrameComponent.name, () => {
   let component: PhotoFrameComponent;
   let fixture: ComponentFixture<PhotoFrameComponent>;
 
