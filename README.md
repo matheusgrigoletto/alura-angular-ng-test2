@@ -27,11 +27,8 @@ Após o clone do repositório, executar os comandos:
 # instalação das depêndencias
 $ sudo npm install
 
-# execução em modo de desenvolvimento
-$ ng serve
-
-# ou
-$ npm start
+# execução em modo de desenvolvimento (ng serve + api)
+$ npm run all
 
 # para execução dos testes
 $ npm run test

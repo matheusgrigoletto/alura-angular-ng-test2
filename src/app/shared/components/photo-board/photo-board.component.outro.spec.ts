@@ -1,27 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {
-  Component,
-  SimpleChange,
-  SimpleChanges,
-  ViewChild,
-} from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 import { Photo } from './interfaces/photo';
 import { PhotoBoardModule } from './photo-board.module';
 import { PhotoBoardComponent } from './photo-board.component';
-
-function buildPhotoList(): Photo[] {
-  const photos: Photo[] = [];
-
-  for (let i = 0; i < 8; i++) {
-    photos.push({
-      id: i,
-      description: 'Description for photo ' + i,
-      url: 'http://placehold.it/350x150',
-    });
-  }
-  return photos;
-}
+import { buildPhotoList } from './test/build-photo-list';
 
 describe(PhotoBoardComponent.name + ' - outros', () => {
   let component: TestComponent;
